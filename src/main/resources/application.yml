@@ -1,0 +1,35 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: CrowdFunding
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/crowdfundingAndChat
+    username: root
+    password: Dell2200jj.
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format-sql: true
+    database: mysql
+    database-platfrom: org.hibernate.dialect.MySQL8Dialect
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: raefbelhaj54@gmail.com
+    password: fggf xbmt hysv uaer
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
+
